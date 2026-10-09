@@ -22,5 +22,5 @@ jobs:
       run: dotnet restore
     - name: Build the app
       run: dotnet build --no-restore
-    - name: Run unit tests
+    - name: Run UI tests
       run: dotnet test --no-build --verbosity normal
