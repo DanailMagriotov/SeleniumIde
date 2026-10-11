@@ -1,17 +1,7 @@
 pipeline{
     agent any
-    
+
     stages{
-        stage("Checkout the code"){
-            steps{
-                bat "actions/checkout@v4"
-            }
-        }
-        stage("Setup .NET 8.0"){
-            steps{
-                bat "actions/setup-dotnet@v4"
-            }
-        }
         stage("Restore dependencies"){
             steps{
                 bat "dotnet restore"
